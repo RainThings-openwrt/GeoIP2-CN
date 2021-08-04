@@ -56,7 +56,7 @@ jobs:
 
     - name: Push artifacts to release branch
       run: |
-        git config --local user.email "891708+soffchen@users.noreply.github.com"
+        git config --local user.email "61218971+RainThings@users.noreply.github.com"
         git config --local user.name "github-action[bot]"
 
         git fetch
@@ -87,9 +87,9 @@ jobs:
 
     - name: Purge CDN Cache
       run: |
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/CN-ip-cidr.txt > /dev/null 2>&1
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/Country.mmdb > /dev/null 2>&1
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml > /dev/null 2>&1
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-ruleset.list > /dev/null 2>&1
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/surge-ruleset.list > /dev/null 2>&1
-        curl -L https://purge.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/chnroute.ipset > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/CN-ip-cidr.txt > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/Country.mmdb > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/clash-rule-provider.yml > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/clash-ruleset.list > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/surge-ruleset.list > /dev/null 2>&1
+        curl -L https://purge.jsdelivr.net/gh/RainThings-openwrt/GeoIP2-CN@release/chnroute.ipset > /dev/null 2>&1
